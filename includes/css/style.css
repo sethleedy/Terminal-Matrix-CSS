@@ -1,0 +1,223 @@
+@import "menu.css";
+@import "tabs.css";
+@import "window.css";
+@import "inputs.css";
+@import "tables.css";
+
+/* Define Colors */
+
+
+/* Lighter Orange: border-color: darkgoldenrod;*/
+
+.lightOrange {
+	color: darkgoldenrod;
+}
+
+
+/* Terminal Orange: border-color: orange;*/
+
+.terminalOrange {
+	color: orange;
+}
+
+
+/* Dark Orange:: border-color: darkorange;*/
+
+.darkOrange {
+	color: darkorange;
+}
+
+
+/* Lighter Green: border-color: lightgreen; */
+
+.lightGreen {
+	color: lightgreen;
+}
+
+
+/* Bold Green: border-color: forestgreen;*/
+
+.boldGreen {
+	color: forestgreen;
+}
+
+
+/* Terminal Green: border-color: limegreen;*/
+
+.terminalGreen {
+	color: limegreen;
+}
+
+.textGreen {
+	color: green;
+}
+
+
+/* Dark Green: border-color: darkgreen;*/
+
+.darkGreen {
+	color: darkgreen;
+}
+
+
+/* END Colors */
+
+
+/* Spacings */
+
+.width10 {
+	width: 10px;
+}
+
+.width20 {
+	width: 20px;
+}
+
+.width30 {
+	width: 30px;
+}
+
+.width40 {
+	width: 40px;
+}
+
+.width50 {
+	width: 50px;
+}
+
+.width60 {
+	width: 60px;
+}
+
+.width70 {
+	width: 70px;
+}
+
+.width80 {
+	width: 80px;
+}
+
+.width90 {
+	width: 90px;
+}
+
+.width100 {
+	width: 100px;
+}
+
+
+/* END Spacings */
+
+body {
+	background-color: black;
+	color: green;
+	font-family: 'VT323', monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	/*	color: darkgoldenrod;*/
+	/* Lighter Orange */
+	/*	color: orange;*/
+	/* Terminal Orange */
+	color: darkorange;
+	/* Dark Orange */
+	margin-top: 1px;
+	letter-spacing: 2px;
+}
+
+a:link,
+a:visited,
+a:active {
+	color: forestgreen;
+}
+
+a:hover {
+	color: lightgreen;
+}
+
+hr.orange,
+hr {
+	border-color: darkgoldenrod;
+	/* Lighter Orange */
+	/*	border-color: orange;*/
+	/* Terminal Orange */
+	/*	border-color:darkorange;*/
+	/* Dark Orange */
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+
+hr.green {
+	/*	border-color: lightgreen;*/
+	/* Lighter Green */
+	/*	border-color: forestgreen;*/
+	/* Bold Green */
+	/*	border-color: limegreen;*/
+	/* Terminal Green */
+	border-color: darkgreen;
+	/* Dark Green */
+	margin-top: 12px;
+	margin-bottom: 10px;
+}
+
+h1 hr,
+h2 hr,
+h3 hr,
+h4 hr,
+h5 hr,
+h6 hr {
+	margin-top: -6px !important;
+	margin-bottom: 10px !important;
+}
+
+.removeMarginBottom {
+	margin: 0px;
+}
+
+#displayDate {
+	position: relative;
+	/*	top: -20px;*/
+	/*	font-weight: bold;*/
+}
+
+#mainContainer {
+	width: 99%;
+	/* Strangely, a width:100% causes a scrollbar. */
+	max-width: 100%;
+	height: 100px;
+	position: absolute;
+}
+
+
+/* Scroll bars */
+
+body::-webkit-scrollbar {
+	width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px green;
+}
+
+body::-webkit-scrollbar-thumb {
+	/*	background-color: black;*/
+	/*	outline: 4px solid limegreen;*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px limegreen;
+}
+
+
+/* END Scroll bars */
+
+img.addBorder {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: darkgreen 1px solid;
+	box-shadow: 3px 3px 15px darkgreen;
+	border-radius: 15px;
+}

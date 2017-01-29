@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Gallery of work</title>
+	<meta charset="UTF-8">
+	<link href="includes/css/google-font-VT323.css" rel="stylesheet" type="text/css">
+	<link href="includes/css/style.css" type="text/css" rel="stylesheet">
+	<script src="includes/scripts/jquery3.1.1.min.js"></script>
+	<script src="includes/scripts/custom-typeout.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// Set some variables
+			var consoleUser = "employer";
+			var consoleHost = "gallery";
+
+			// Set Date in the header			
+			var nDate = new Date();
+			var dDate = nDate.toDateString();
+			$("#displayDate").text(consoleUser + "@" + consoleHost + ":/$ " + dDate);
+
+			// Set what elements get the "typed out" effect.
+			// Class: typeOut, by default.
+			// Also can setup by calling the object with the element(jQuery style) to type out its content;
+			// 	var objTypeOutText = new objTypeOut("p");
+			//	var objTypeOutText = new objTypeOut("#id");
+			//	var objTypeOutText = new objTypeOut(".class");
+
+			// The Header Command Line			
+			var objTypeOutcmdLineTags = new objTypeOut("#cmdLine");
+			objTypeOutcmdLineTags.blnAutoRemoveCursor = false;
+			objTypeOutcmdLineTags.blnAudioEffect = true;
+			objTypeOutcmdLineTags.startTyping();
+
+			// All <p> tags
+			var objTypeOutPTags = new objTypeOut("p");
+			objTypeOutPTags.intTypingDelaySpeed = 30;
+			objTypeOutPTags.startTyping();
+
+			// All <th> and <td> tags
+			var objTypeOutTHTags = new objTypeOut("th");
+			var objTypeOutTDTags = new objTypeOut("td");
+			objTypeOutTHTags.startTyping();
+			objTypeOutTDTags.startTyping();
+
+			// All <h1> through <h6> tags
+			// Issues with the cursor, disabling it for this.
+			var objTypeOutH1Tags = new objTypeOut("h1");
+			var objTypeOutH2Tags = new objTypeOut("h2");
+			var objTypeOutH3Tags = new objTypeOut("h3");
+			var objTypeOutH4Tags = new objTypeOut("h4");
+			var objTypeOutH5Tags = new objTypeOut("h5");
+			var objTypeOutH6Tags = new objTypeOut("h6");
+			objTypeOutH1Tags.blnEnableCursor = false;
+			objTypeOutH2Tags.blnEnableCursor = false;
+			objTypeOutH3Tags.blnEnableCursor = false;
+			objTypeOutH4Tags.blnEnableCursor = false;
+			objTypeOutH5Tags.blnEnableCursor = false;
+			objTypeOutH6Tags.blnEnableCursor = false;
+			objTypeOutH1Tags.startTyping();
+			objTypeOutH2Tags.startTyping();
+			objTypeOutH3Tags.startTyping();
+			objTypeOutH4Tags.startTyping();
+			objTypeOutH5Tags.startTyping();
+			objTypeOutH6Tags.startTyping();
+
+			// The default class "typeOut"
+			var objTypeOutDefault = new objTypeOut();
+			objTypeOutDefault.startTyping();
+
+
+		});
+
+	</script>
+</head>
+
+<body>
+	<div id="mainContainer">
+		<div class="displayWindow">
+			<h1 class="typeOut removeMarginBottom">Gallery of work</h1>
+			<span>employer@gallery:/$ date</span>
+			<br>
+			<span id="displayDate">November 8, 2016</span>
+			<br>
+			<span id="cmdLine">employer@gallery:/$ </span>
+		</div>
+
+		<div class="displayWindow">
+
+			<h2>Portfolio<hr class="green"></h2>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">The Galactic Network</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> HTML, Javascript, CSS, SpecialFonts, JQuery, UI
+					<br><span class="colorData">URL:</span> <a href="http://resume.sethleedy.name/designGallery/The_Galactic_Network" target="_blank">The Galactic Network</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/UI-Example-The-Galactic-Network" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This was a UI project to create something based on a theme. I chose space/Star Trek.
+					</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Howard Shore Promotion</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> HTML, GIMP, CSS, SpecialFonts, UI, Power Point
+					<br><span class="colorData">URL:</span> <a href="http://resume.sethleedy.name/designGallery/howard_shore_poster_page" target="_blank">Howard Shore Promotion</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/Howard-Shore-and-The-Lord-of-the-Rings-The-Hobbit" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This was a nice little school project to create a promotional poster. I chose Howard Shore and his works on The Lord of the Rings and the Hobbit videos.
+					</p>
+					<p>I had to create a poster and have it fit within a webpage seemlessly. Also create a "how-to" Power Point on how I created the poster in GIMP.</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Create a bullet hole poster</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> HTML, PHP, CSS, UI, PHP NameSpace Classes, AJAX, Bootstrap, JQuery
+					<br><span class="colorData">URL:</span> <a href="http://resume.sethleedy.name/designGallery/PHP-image-upload-and-overlay-master" target="_blank">Create a bullet hole poster</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/PHP-image-upload-and-overlay" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This project was to make an example of PHP namespaces and classes, Bootstrap, AJAX, JQuery, Image manipulations, File Uploading.
+					</p>
+					<p>This site will allow you to take the included OR uploaded images and place random bullet holes on it.</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Trail Guides</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> PHP, HTML, Javascript, CSS, SpecialFonts, JQuery
+					<br><span class="colorData">URL:</span> <a href="http://trailguides.sethleedy.name/" target="_blank">Trail Guides</a>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This is a site I developed in my spare time. Still working on the UI some. I plan on adding content and value to it before unleashing it on the World Wide Web.
+					</p>
+					<p> I'll be changing things in the code for the better and creating a PHP database class to help with the upcoming plan of database support for forums, lists, and other interactive items.</p>
+					<p>Found out that the API I was using to find local hiking area's is not working without HTTPS. It's on my todo list.</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Calculator of Tips</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> PHP, HTML, CSS, Javascript, Bootstrap, MySQL, JQuery
+					<br><span class="colorData">Demo URL:</span> <a href="http://resume.sethleedy.name/designGallery/Calc/" target="_blank">Calculator #1</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/Calculate-Tip" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This is a simple calculator that I used as a learning example for the Bootstrap grid system. Before this, I only studied it to grasp the concept presented in bootstrap.
+						<br> The CSS styling is nice too.
+					</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Calculator of Fibonacci Numbers</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> PHP, HTML, CSS, Javascript, ReactJS w/ Bootstrap, JQuery
+					<br><span class="colorData">Demo URL:</span> <a href="http://resume.sethleedy.name/designGallery/Calc2/" target="_blank">Calculator #2</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/Calculate-Fibonacci-Numbers" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						This is a simple calculator that I used as a learning example for the ReactJS including the ReactJS-Bootstrap addon. My first project in ReactJS.
+					</p>
+				</div>
+			</div>
+
+			<div class="divContactFrame">
+				<div class="divContactTab"><span class="colorName">Nearest store by Zip Code</span> <span class="boldName"></span></div>
+				<div class="divContactContents">
+					<span class="colorData">Code types:</span> PHP, HTML, CSS, Javascript, Bootstrap, MySQL, JQuery
+					<br><span class="colorData">Demo URL:</span> <a href="http://resume.sethleedy.name/designGallery/ZipCodeDistance/" target="_blank">Nearest store by zip code</a>
+					<br><span class="colorData">Code Resource: <a href="https://github.com/sethleedy/Zip-Code-Distance" target="_blank">Github</a></span>
+					<br><span class="colorData">Info: &#8628;</span>
+					<p>
+						A class project involving finding the nearest store based on your zip code. Zip codes are stored in a MySQL database.
+					</p>
+					<p>I used Bootstrap to make a nice looking form and JQuery/AJAX to load the results into it without reloading the page. WEB 2.0!!</p>
+				</div>
+			</div>
+
+		</div>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+textarea,
+button,
+input[type] {
+	color: green;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: darkgreen 2px solid;
+	box-shadow: 5px 3px 10px darkgreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin: 1px 7px 4px 7px;
+}
+
+textarea:hover,
+button:hover,
+input:not([type=checkbox]):not([type=radio]):hover {
+	color: limegreen;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: limegreen 2px solid;
+	box-shadow: 5px 3px 10px limegreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin: 1px 7px 4px 7px;
+}
+
+
+/* Make the submit button standout */
+
+input[type=submit] {
+	color: forestgreen;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: forestgreen 2px solid;
+	box-shadow: 5px 3px 10px forestgreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin: 1px 7px 4px 7px;
+}
+
+
+/* Radio and Checkbox block */
+
+input[type=checkbox]:not(old),
+input[type=radio]:not(old) {
+	width: 2em;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	opacity: 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio]:not(old) + label {
+	display: inline-block;
+	margin-left: -2em;
+	line-height: 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span,
+input[type=radio]:not(old) + label > span {
+	display: inline-block;
+	width: 0.875em;
+	height: 0.875em;
+	margin: 0.25em 0.5em 0.25em 0.25em;
+	border: 0.0625em solid green;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	/*	background: rgb(224, 224, 224);*/
+	/*background-image: -moz-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+	background-image: -ms-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+	background-image: -o-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+	background-image: -webkit-linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));
+	background-image: linear-gradient(rgb(240, 240, 240), rgb(224, 224, 224));*/
+	vertical-align: bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio]:not(old):checked + label > span {
+	/*background-image: -moz-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+	background-image: -ms-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+	background-image: -o-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+	background-image: -webkit-linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));
+	background-image: linear-gradient(rgb(224, 224, 224), rgb(240, 240, 240));*/
+}
+
+input[type=checkbox]:not(old):checked + label > span:before {
+	content: '✓';
+	display: block;
+	width: 1em;
+	color: limegreen;
+	font-size: 0.875em;
+	line-height: 1em;
+	text-align: center;
+	text-shadow: 0 0 0.0714em darkgreen;
+	font-weight: bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span {
+	display: block;
+	width: 0.5em;
+	height: 0.5em;
+	margin: 0.125em;
+	border: 0.0625em solid limegreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background: rgb(153, 204, 102);
+	background-image: -moz-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+	background-image: -ms-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+	background-image: -o-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+	background-image: -webkit-linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+	background-image: linear-gradient(rgb(179, 217, 140), rgb(153, 204, 102));
+}
+
+
+/* END Radio and Checkbox block */
+
+select {
+	color: green;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: darkgreen 2px solid;
+	box-shadow: 5px 3px 10px darkgreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin: 1px 7px 4px 7px;
+}
+
+select:hover,
+select:focus {
+	color: limegreen;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: limegreen 2px solid;
+	box-shadow: 5px 3px 10px limegreen;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	margin: 1px 7px 4px 7px;
+}

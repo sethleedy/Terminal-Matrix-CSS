@@ -1,0 +1,51 @@
+/* Tables */
+
+
+/* Tables are funky, try not using them. */
+
+
+/* Modify as needed */
+
+table {
+	border-spacing: 0;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: green 2px solid;
+	box-shadow: 5px 5px 10px green;
+}
+
+table td {
+	vertical-align: text-top;
+	padding: 10px 5px;
+	border-style: solid;
+	border-width: 0px;
+	/*	overflow: hidden;*/
+	/*	word-break: normal;*/
+	color: darkgreen;
+	/* Can also use the class .boldGreen or .lightGreen */
+	background-color: black;
+}
+
+table tr:hover td {
+	border-bottom: 1px solid limegreen;
+	border-top: 1px solid limegreen;
+}
+
+table:hover {
+	box-shadow: 5px 3px 10px limegreen;
+}
+
+table th {
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 3px;
+	padding: 10px 5px;
+	overflow: hidden;
+	word-break: normal;
+	color: orange;
+	/*	background-color: green;*/
+	border: none;
+	border-bottom: 1px solid green;
+}

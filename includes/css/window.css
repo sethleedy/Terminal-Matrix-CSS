@@ -1,0 +1,26 @@
+.displayWindow {
+	max-width: 800px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	padding: 2px 15px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: green 2px solid;
+	box-shadow: 5px 5px 10px green;
+}
+
+.displayWindow:hover {
+	border: limegreen 2px solid;
+	box-shadow: 5px 3px 10px limegreen;
+}
+
+.displayWindow > div > hr {
+	position: relative;
+	top: -10px;
+}

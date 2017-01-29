@@ -1,0 +1,100 @@
+/* https://codepen.io/andornagy/pen/xhiJH */
+
+nav {
+	margin: 10px 10px;
+	/*	background-color: black;*/
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+
+nav ul li {
+	display: inline-block;
+	background-color: black;
+}
+
+nav a {
+	display: block;
+	padding: 0 10px;
+	color: #FFF;
+	font-size: 20px;
+	line-height: 40px;
+	text-decoration: none;
+	border-style: dotted;
+	border-width: 1px;
+	border-color: black;
+}
+
+nav a:hover {
+	/*
+	background-color: green;
+	color: black;
+*/
+	/*	font-weight: bold;*/
+	border-style: dotted;
+	border-width: 1px;
+	border-color: lightgreen;
+}
+
+
+/* Hide Dropdowns by Default */
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 40px;
+	/* the height of the main nav */
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+	display: inherit;
+}
+
+nav a~ul {
+	border-style: double;
+	border-width: 2px;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+
+
+/* Second, Third and more Tiers	*/
+
+
+/*,nav ul ul ul li*/
+
+nav ul ul ul {
+	position: relative;
+	top: -40px;
+	left: 160px;
+}
+
+nav a::before {
+	content: "❲";
+}
+
+
+/* Change this in order to change the Dropdown symbol */
+
+li > a:after {
+	content: '⥥❳';
+}
+
+li > a:only-child:after {
+	content: '❳';
+}

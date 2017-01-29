@@ -1,0 +1,68 @@
+.divContactFrame {}
+
+.divContactFrame .divContactTab {
+	left: 0;
+	max-width: 23%;
+	margin-top: 15px;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: green 1px solid;
+	border-bottom-style: none;
+	/*box-shadow: 7px 0px 10px darkgreen;*/
+}
+
+.divContactFrame .divContactContents {
+	left: 0;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: darkgreen 2px solid;
+	box-shadow: 5px 3px 10px darkgreen;
+}
+
+.divContactFrame .divContactTab:hover {
+	left: 0;
+	max-width: 23%;
+	margin-top: 15px;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-style: none;
+	/*box-shadow: 7px 0px 10px darkgreen;*/
+	border: limegreen 1px solid;
+	/*	box-shadow: 5px 3px 10px limegreen;*/
+}
+
+.divContactFrame .divContactContents:hover {
+	left: 0;
+	padding: 2px 15px;
+	padding-bottom: 5px;
+	background-color: black;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border: limegreen 2px solid;
+	box-shadow: 5px 3px 10px limegreen;
+}
+
+.divContactFrame .divContactContents p {
+	text-indent: 1em;
+}
+
+.divContactFrame span.colorName {
+	color: orange;
+}
+
+.divContactFrame span.colorData {
+	color: limegreen;
+}
+
+.divContactFrame span.boldName {
+	font-weight: bold;
+}
